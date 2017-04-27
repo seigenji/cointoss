@@ -34,9 +34,12 @@ c(1,2,3) + c(4,5)
  c(1,2,3,4)^2
 cumsum(1:3)
 diff(1:3)
-
+result = 1:6
+result[1]
 coin_toss = function(){
   result = integer(5)
-  runif(1, 0, 2) %/% 1
-  
+  for(i in 1:5){
+    result[i] = runif(1, 0, 2) %/% 1
+  }
+  return(result)
 }
