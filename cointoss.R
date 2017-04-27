@@ -43,3 +43,11 @@ coin_toss = function(){
   }
   return(result)
 }
+result = coin_toss()
+coin_mean = mean(result)
+squared_sum = .0
+"%+=%" <- function(x, y) x <<- x + y
+for(i in 1:5){
+  squared_sum = squared_sum + (result[i] - coin_mean)^2
+}
+squared_sum
