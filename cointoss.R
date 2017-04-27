@@ -14,5 +14,7 @@ squared_sum = .0
 for(i in 1:5){
   squared_sum = squared_sum + (result[i] - coin_mean)^2
 }
-squared_sum
-
+0.16 * 3 + 0.36 * 2
+squared_sum/5
+squared_sum/4
+var(result)
